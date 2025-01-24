@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+
+    <script src="./js/numbers.js"></script>
+    <script src="./js/operation.js"></script>
+    <style>
+
+ * {
+    box-sizing: border-box;
+}
+form{
+    background-color: #621b6e;
+    border-radius: 20px;
+    box-shadow: #72297e;
+
+}
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #3e1d48; 
+}
+
+#calculator {
+    background-color: #72297e; 
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #e3a8f3; 
+}
+
+#display {
+    width: 80%;
+    height: 10%;
+    text-align: right;
+    font-size: 2em;
+    border: 1px solid #b997b7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 1600px;
+    background-color: #5c3f77; 
+    color: white;
+    overflow-x: auto;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    background-color: #573a6b; 
+    border: 25 solid #8f5e8a; 
+    font-size: 50px;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.button:hover {
+    background-color: #3b1c4d; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+    background-color: #621b6e; 
+    transform: scale(0.95); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+.button.clear {
+    background-color: #e53d6d; 
+}
+
+.button.clear:hover {
+    background-color: #c3305c;
+}
+
+.button.equals {
+    background-color: #42a5f5; 
+}
+
+.button.equals:hover {
+    background-color: #1e88e5; 
+}
+
+
+    </style>
+    <form name = "calculator">
+        <input type="text" id="display" value="0" readonly>
+        <input type="text" id="display2" readonly>
+        <input type="text" id="operator" readonly>
+        <br><br>
+        <button type = "button" onclick="seven()">7</button>
+        <button type = "button" onclick="eight()">8</button>
+        <button type = "button" onclick="nine()">9</button>
+        <button type = "button" onclick="plus()">+</button>
+        <br><br>
+        <button type = "button" onclick="four()">4</button>
+        <button type = "button" onclick="five()">5</button>
+        <button type = "button" onclick="six()">6</button>
+        <button type = "button" onclick="times()">*</button>
+        <br><br>
+        <button type = "button" onclick="one()">1</button>
+        <button type = "button" onclick="two()">2</button>
+        <button type = "button" onclick="three()">3</button>
+        <button type = "button" onclick="minus('-')">-</button>
+        <br><br>
+        <button type = "button" onclick="zero()">0</button>
+        <button type = "button" onclick="clear()">c</button>
+        <button type = "button" onclick="equals()">=</button>
+        <button type = "button" onclick="divide()">/</button>
+        <br><br>
+    </form>
+</head>
+<body>
+    
+</body>
+</html>
