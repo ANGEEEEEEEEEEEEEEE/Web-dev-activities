@@ -1,0 +1,129 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    width: 400px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display {
+    width: 100%;
+    text-align: right;
+    font-size: 32px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    color: #444;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+form {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #6a4e9f;
+    border-radius: 10px;
+}
+
+.input-field {
+    width: 90%;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #555;
+    transition: border-color 0.2s ease;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #7c5cd4;
+}
+
+.buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    background-color: #7c5cd4;
+    border: none;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #6a4e9f;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+button:focus {
+    outline: none;
+}
+
+button.operator {
+    background-color: #ff7c7c;
+}
+
+button.operator:hover {
+    background-color: #e35d5d;
+}
+
+button.equal {
+    background-color: #7c9f5d;
+}
+
+button.equal:hover {
+    background-color: #6a864a;
+}
+
+button.clear {
+    background-color: #f2b7a2;
+}
+
+button.clear:hover {
+    background-color: #e59f87;
+}
+
+/* Heart button styling (optional) */
+button.heart {
+    background-color: #ff4f7b;
+    color: white;
+}
+
+button.heart:hover {
+    background-color: #e03a63;
+}
+
